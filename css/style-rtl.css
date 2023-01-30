@@ -14,6 +14,7 @@ body {
     direction: rtl;
     text-align: right;
     font-family: "Tajawal", sans-serif;
+    position: relative;
 }
 
 .section {
@@ -260,4 +261,66 @@ footer h3 {
     .search {
         margin-top:20px;
     }
+}
+
+
+/*********** Blog Details ************/
+
+.media {
+    display: flex;
+    justify-content: space-between;
+}
+.media-img {
+    width:15%;
+}   
+.media-body{
+    width:80%;
+}
+
+.media-body h4{
+    font-weight: 500;
+}
+.media .media-reply{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact input  , .contact textarea {
+    padding:10px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #eee;
+}
+
+.contact button {
+    background-color:#ffc557;
+    padding:10px;
+    transition: all 0.5s ease;
+}
+.contact button:hover {
+    background-color: #666;
+    color:white;
+}
+
+.btp {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    background: #444;
+    color: var(--mainColor);
+    padding: 7px 9px;
+    top:540px;
+    left: 10px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s; 
+    z-index: 99;
+    }
+    .btp.show{
+        opacity: 1;
+        visibility: visible;
+    }
+
+.btp i {
+        font-size: 28px;
+        transform: rotate(-90deg);
 }
